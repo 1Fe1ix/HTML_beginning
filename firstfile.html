@@ -1,12 +1,82 @@
 <!DOCTYPE html>
+<!-- page language -->>
 <html lang="de">
 
+    <!-- head defines how it looks-->
     <head>
         <title> My first page </title>
+        
+        <!-- should change color theme of page ??-->
+        <meta name="theme-color" content="#00ff00">
+
+        <!-- defines styles of objects in body--> 
+        <style>
+        /*defines look of div every default div without defining id or class will have this style*/
+        
+        div {
+            padding: 1em;
+            margin: 1em;
+            border: 1px solid rgb(128, 75, 0);
+            width: 30%;
+        }
+        
+        /*defines look of third_div only the div with this id will be styled like this*/
+        #third_div {
+            padding: 1em;
+            margin: 1em;
+            border: 1px solid navy;
+            width: 90%;
+        }
+
+        /*defines look of members of class important, all members will be styled like this*/
+        .important{
+            color: rgb(255, 0, 0);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        </style>
+
     </head>
 
+    <!-- body defines whats the content-->
     <body> 
-        hello world!
+        <!-- Headline -->
+        <h1> My first Page </h1>
+        
+        <!-- make horizontal line -->
+        <hr>
+
+        <!-- make blank spaces -->
+        write more stuff &nbsp;&nbsp;&nbsp;&nbsp; write more stuff
+
+        <!-- main marks main part of page not necessary, but good for code readability + screen reader-->
+        <main>
+            <!-- make a paragraph with example text -->
+            <p>
+            <!-- <br> = new line -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+            
+            <!-- span defines marks parts, can be used to underline important parts, whole class only need to be defined ones-->>
+            <span class="important">Dolorem dolore suscipit</span> error voluptas voluptatum, <span class="important">nam totam voluptatibus asperiores saepe commodi.</span><br> 
+            Facere facilis error soluta quos corporis labore aliquid fuga similique!
+            </p>
+
+            <!--  a = anchor tag how to link other websites on mine-->
+            <a href = "https://github.com/1Fe1ix">
+            <!-- name of button -->
+            MY GITHUB 
+            </a>
+            <!-- div(division) = block level element that have to flow eac other cant be next to each other no mater what-->>
+            <div> first </div>
+            <div> second </div>
+            <div id="third_div"> third </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
     </body>
 
 </html>

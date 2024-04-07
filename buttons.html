@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html lang="de">
+
+<head>
+    	<meta chartset="utf-8">
+        <!-- tells when page content expires-->
+        <meta http-equiv="expires" content="1">
+        <!-- tells when page refreshes-->
+        <!--<meta http-equiv="refresh" content="5">-->
+
+        <!-- Scales the pages to different screen sizes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
+
+        <title>BUTTONS</title>
+
+        <style>
+                
+
+                radio{
+                margin-right: 100px;        
+
+                }
+
+
+        </style>        
+
+</head>
+
+<body>
+        <!-- method from form means what it will do examp. post action is where it will be posted/sended to-->
+        <form method="post" action="">
+
+        
+
+        <h1>Enter user id name and password</h1>
+        <!-- placeholder sings the field, gives it a purpose or name-->
+        <!--type defines if visible or not-->
+        <input type="text" size="20" maxlength="20" name="userid" placeholder="user id" required>
+        <input type="password" size="20" maxlength="20" name="password" placeholder="password" required>    
+
+        <!-- send button sends form to destionation-->
+        <input type="submit" value="Send"/>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- input field button sends value in value of button-->
+        <button type="submit" name="send" value="ValueThatGetsSend">
+                Button name submit
+        </button>
+
+        <button type="cancle">
+                Button name cancle
+        </button>
+
+        <!-- hidden elements prevents multiple requests in an server, with the hidden number the receiver can see if a send button was double clicked-->
+        <!-- can be found in the developer tools, in elements-->
+        <input type="hidden" name="token" value="ED682AC3">
+
+        <!-- Multiline Text input-->
+        <textarea type="textarea" cols="80" rows="5" name="message" placeholder="Enter your Message">
+               
+        </textarea>
+
+        <br>
+        <br>
+
+        
+        <!-- list of radio buttons  -->
+        <ul>
+                <li>
+                <!-- description in lable makes styling easy -->
+                <label for="student">Option one</label>
+                <!--Radio buttons will only block each other if the have the same name or belong to the same class-->
+                <input type="radio" class="job_class" id="student" name="job" value="killer">                    
+                </li>
+                <li>     
+                <label for="student"> Option two</label>
+                <input type="radio" class="job_class" id="student" name="job" value="killer">                    
+                </li>
+                <li>      
+                <label for="student">Option three</label>
+                <input type="radio" class="job_class" id="student" name="job" value="killer">                   
+                </li>
+        </ul>  
+        
+
+        <!-- easy with table putting buttons and labels in line without big effort-->  
+        <table>
+              
+                      
+                <tbody>
+                        <tr>
+                        <td>Option one </td>               
+                        <td><input type="radio" id="professor" name="job" value="killer"></td>
+                        </tr>
+
+                        <tr>
+                        <td>Option two</td>        
+                        <td><input type="radio" id="professor" name="job" value="killer"></td>
+                        </tr>
+
+                        <tr>
+                        <td>Option three</td>        
+                        <td><input type="radio" id="professor" name="job" value="killer"></td>
+                        </tr>
+                </tbody>        
+        </table>
+        </form>  
+
+       
+
+
+</body>    
+
+
